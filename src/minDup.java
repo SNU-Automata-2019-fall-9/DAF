@@ -1,3 +1,4 @@
+import java.awt.List;
 import java.util.*;
 import java.math.*;
 
@@ -109,6 +110,31 @@ public class minDup{
         }
         for(int i = 0; i < N; i++){
             rtn[i] = hp.pop()[0];
+        }
+        return rtn;
+    }
+
+    //rooted dag를 리턴한다.
+    public int[] rootedDownOrder(int[][] adjList, int[] degree, int N){
+        int[] down = downOrder(degree);
+        boolean[] reachable  = new boolean[N];
+        ArrayList<Integer> downList = new ArrayList<>();
+        for(int i = 0; i < N; i++)
+            downList.add(down[i]);
+        int[] rtn = new int[N];
+        int k;
+        rtn[0] = downList.get(0);
+        downList.remove(0);
+        for(int v = 0; v < degree[rtn[0]]; v++){
+            reachable[adjList[rtn[0]][v]] = true;
+        }
+        for(int i = 1; i < N; i++){
+            for(k = 0; !reachable[downList.get(k)]; k++);
+            rtn[i] = downList.get(k);
+            downList.remove(k);
+            for(int v = 0; v < degree[rtn[i]]; v++){
+                reachable[adjList[rtn[i]][v]] = true;
+            }
         }
         return rtn;
     }

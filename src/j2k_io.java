@@ -27,7 +27,7 @@ class j2k_main{
 
         IO.setOut("downorder.dag");
         for(int i = 0; i < n; i++){
-            dag = md.downOrder(qg[i].degree);
+            dag = md.rootedDownOrder(qg[i].adjList, qg[i].degree, qg[i].N);
             IO.write(dag);
         }
         IO.setOut("greedyLog.dag");

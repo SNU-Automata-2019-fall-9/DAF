@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6150417b-5ba7-41b2-9239-39c14f87f766" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/hw3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hw3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downorder.dag" beforeDir="false" afterPath="$PROJECT_DIR$/downorder.dag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/longestPath.dag" beforeDir="false" afterPath="$PROJECT_DIR$/longestPath.dag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAF/longestPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAF/longestPath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAF/minDup$heap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAF/minDup$heap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAF/minDup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAF/minDup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAF/minDupMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAF/minDupMain.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/j2k_io.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/j2k_io.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/longestPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/longestPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/minDup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/minDup.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,12 +24,12 @@
     <session id="278989620">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.7" value="3" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -39,12 +47,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7466" />
+          <entry key="java" value="8605" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7466" />
+          <entry key="JAVA" value="8605" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -59,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/minDup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="3" selection-start-line="3" selection-end-line="23" selection-end-column="1" />
+            <state relative-caret-position="648">
+              <caret line="138" column="19" selection-start-line="138" selection-start-column="19" selection-end-line="138" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -68,26 +76,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/longestPath.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/hw3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="25" column="69" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
+            <state relative-caret-position="-78">
+              <caret line="141" column="24" selection-start-line="141" selection-start-column="24" selection-end-line="141" selection-end-column="24" />
+              <folding>
+                <element signature="method#pseudoLongest#0;class#longestPath#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hw3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-726">
+              <caret line="25" column="69" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/j2k_io.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="150" column="29" selection-start-line="150" selection-start-column="29" selection-end-line="150" selection-end-column="29" />
+            <state relative-caret-position="176">
+              <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,11 +154,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/minDup.java" />
-        <option value="$PROJECT_DIR$/src/longestPath.java" />
         <option value="$PROJECT_DIR$/src/j2k_graph.java" />
-        <option value="$PROJECT_DIR$/src/j2k_io.java" />
         <option value="$PROJECT_DIR$/src/hw3.java" />
+        <option value="$PROJECT_DIR$/src/longestPath.java" />
+        <option value="$PROJECT_DIR$/src/minDup.java" />
+        <option value="$PROJECT_DIR$/src/j2k_io.java" />
       </list>
     </option>
   </component>
@@ -161,6 +172,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,13 +191,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576583445850" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576587638829" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -197,7 +208,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.hw3">
+  <component name="RunManager" selected="Application.j2k_main">
     <configuration name="hw3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hw3" />
       <module name="DAF" />
@@ -236,9 +247,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.hw3" />
         <item itemvalue="Application.j2k_main" />
         <item itemvalue="Application.longestPathMain" />
+        <item itemvalue="Application.hw3" />
         <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
@@ -259,7 +270,7 @@
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="877" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26693493" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27095908" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -291,20 +302,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/minDup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="3" selection-start-line="3" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/longestPath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yeast_400_j2k.dag">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -318,6 +315,13 @@
     <entry file="file://$PROJECT_DIR$/yeast_400n">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/hw3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-726">
+          <caret line="25" column="69" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/j2k_graph.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -325,20 +329,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/j2k_io.java">
+    <entry file="file://$PROJECT_DIR$/src/longestPath.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="150" column="29" selection-start-line="150" selection-start-column="29" selection-end-line="150" selection-end-column="29" />
+        <state relative-caret-position="-78">
+          <caret line="141" column="24" selection-start-line="141" selection-start-column="24" selection-end-line="141" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#pseudoLongest#0;class#longestPath#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hw3.java">
+    <entry file="file://$PROJECT_DIR$/src/minDup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="25" column="69" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
+        <state relative-caret-position="648">
+          <caret line="138" column="19" selection-start-line="138" selection-start-column="19" selection-end-line="138" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/j2k_io.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
