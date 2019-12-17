@@ -3,6 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="6150417b-5ba7-41b2-9239-39c14f87f766" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAF/DAG.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAF/DAG.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAF/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAF/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAF/Label.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAF/Label.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAF/ProcessIO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAF/ProcessIO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAF/Vertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAF/Vertex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAF/hw3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAF/hw3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DAF/j2k_io.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DAF/j2k_io.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report.odt" beforeDir="false" afterPath="$PROJECT_DIR$/report.odt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hw3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hw3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/j2k_io.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/j2k_io.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,7 +25,7 @@
     <session id="278989620">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.9" value="1" />
@@ -38,12 +47,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6966" />
+          <entry key="java" value="7256" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6966" />
+          <entry key="JAVA" value="7256" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -73,20 +82,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hw3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7238">
-              <caret line="340" column="17" selection-start-line="340" selection-start-column="17" selection-end-line="340" selection-end-column="17" />
+            <state relative-caret-position="242">
+              <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/j2k_io.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+            <state relative-caret-position="330">
+              <caret line="161" column="33" selection-start-line="161" selection-start-column="33" selection-end-line="161" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,11 +105,7 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yeast_400_j2k.dag">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1490" selection-end-column="1490" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -149,6 +154,7 @@
         <option value="$PROJECT_DIR$/src/minDup.java" />
         <option value="$PROJECT_DIR$/src/longestPath.java" />
         <option value="$PROJECT_DIR$/src/j2k_graph.java" />
+        <option value="$PROJECT_DIR$/src/hw3.java" />
         <option value="$PROJECT_DIR$/src/j2k_io.java" />
       </list>
     </option>
@@ -185,7 +191,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576575384479" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576582880930" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -199,7 +205,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.j2k_main">
+  <component name="RunManager" selected="Application.hw3">
+    <configuration name="hw3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hw3" />
+      <module name="DAF" />
+      <option name="PROGRAM_PARAMETERS" value="yeast yeast_400n 100" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="j2k_main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="j2k_main" />
       <module name="DAF" />
@@ -226,9 +240,11 @@
       <item itemvalue="Application.main" />
       <item itemvalue="Application.longestPathMain" />
       <item itemvalue="Application.j2k_main" />
+      <item itemvalue="Application.hw3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.hw3" />
         <item itemvalue="Application.j2k_main" />
         <item itemvalue="Application.longestPathMain" />
         <item itemvalue="Application.main" />
@@ -250,7 +266,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="877" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25955734" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -298,29 +313,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hw3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7238">
-          <caret line="340" column="17" selection-start-line="340" selection-start-column="17" selection-end-line="340" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yeast_400_j2k.dag">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1490" selection-end-column="1490" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/yeast_400n">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/j2k_graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/yeast_400n.dag">
       <provider selected="true" editor-type-id="text-editor">
@@ -329,13 +326,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/j2k_graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/j2k_io.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        <state relative-caret-position="330">
+          <caret line="161" column="33" selection-start-line="161" selection-start-column="33" selection-end-line="161" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hw3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
         </state>
       </provider>
     </entry>

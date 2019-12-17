@@ -146,12 +146,23 @@ public class j2k_io {
         }
     }
 
-    public void write(int[] arr){
-        int n = arr.length;
+    public void write(int[] dag){
+        int n = dag.length;
         for(int i = 0; i < n; i++){
-            out.print(arr[i]);
+            out.print(dag[i]);
             out.print(" ");
         }
         out.println();
+    }
+
+    public boolean valid(int[] dag){
+        int n = dag.length;
+        boolean[] chk = new boolean[n];
+        for(int i = 0; i < n; i++){
+            if (dag[i] < 0 || dag[i] >= n) return false;
+            else if (chk[dag[i]]) return false;
+            chk[dag[i]] = true;
+        }
+        return true;
     }
 }

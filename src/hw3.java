@@ -17,6 +17,22 @@ public class hw3{
 			String queryFileName = args[1];
 			int numQuery = Integer.parseInt(args[2]);
 
+        j2k_io IO = new j2k_io(dataFileName, queryFileName, numQuery);
+        j2k_graph dg = IO.readData();
+        j2k_graph[] qg = IO.readQuery();
+        minDup md = new minDup();
+        int[] dag;
+        for(int i = 0; i < numQuery; i++){
+            dag = md.greedyLog(qg[i].adjList, qg[i].degree, qg[i].N);
+            if(IO.valid(dag))
+                IO.write(dag);
+            else{
+                for(int j = 0; j < dag.length; j++)
+                    dag[j] = j;
+            }
+        }
+
+        /*
 			ProcessIO pio = new ProcessIO(dataFileName, queryFileName, numQuery);
             Graph data = pio.readDate();
             Graph[] queries = pio.readQuery();
@@ -32,7 +48,7 @@ public class hw3{
 
           //print DAG string
         //pio.printAllDAGs(int[][]);
-		
+		*/
 	}
 
 }
