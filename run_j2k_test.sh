@@ -18,13 +18,13 @@ echo 'done'
 
 #compare two results
 echo '*comparing result of downorder*'
-python3 sort_result.py result_downorder_dag result_daf
+python sort_result.py result_downorder_dag result_daf
 
 #compare two results
 echo '*comparing result of greedyLog*'
-python3 sort_result.py result_greedyLog_dag result_daf
+python sort_result.py result_greedyLog_dag result_daf
 
 #compare two results
 echo '*comparing result of longestPath*'
-python3 sort_result.py result_longestPath_dag result_daf
+python sort_result.py result_longestPath_dag result_daf
 
