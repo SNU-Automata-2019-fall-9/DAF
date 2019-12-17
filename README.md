@@ -3,6 +3,15 @@
 ## 실행환경
 src 폴더 아래의 자바 클래스들을 모두 컴파일해서 hw3.java를 실행하면 됩니다.
 
+DAF 폴더에서
+
+(컴파일)
+javac -d ./class -sourcepath ./src ./src/hw3.java
+
+(실행)
+java -cp class hw3 args[]
+(java -cp class hw3 yeast yeast_400n 100 > yeast_400.dag)
+
 
 
 # DAF [SIGMOD 2019]
