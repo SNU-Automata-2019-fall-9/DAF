@@ -145,13 +145,20 @@ public class minDup{
     public int[] greedyLog(int[][] adjList, int[] degree, int N){
         int[] dup = new int[N];
         double[] logdup = new double[N];
+        int[] down = downOrder(degree);
         int[] arr = new int[N];
         int[] where = new int[N];
-        arr[0] = 0;
-        where[0] = 0;
+        arr[0] = down[0];
+        where[down[0]] = 0;
         double sum;
+        boolean[] reachable = new boolean[N];
+        reachable[arr[0]] = true;
+        for(int i = 0; i < degree[arr[0]]; i++)
+            reachable[adjList[arr[0]][i]] = true;
 
-        for(int v = 1; v < N; v++){
+        int v;
+        for(int vpos = 1; vpos < N; vpos++){
+            v = down[vpos];
             dup = new int[N];
             for(int i = 0; i < v; i++){
                 for(int j = 0; j < degree[arr[i]]; j++){
@@ -201,6 +208,48 @@ public class minDup{
             }
             arr[a] = v;
         }
+/*
+        boolean rooted = false;
+        while(true) {
+            boolean[] chk = new boolean[N];
+            ArrayList<Integer> bfsQ = new ArrayList<>();
+            bfsQ.add(0);
+            int look;
+            while (!bfsQ.isEmpty()) {
+                look = bfsQ.get(0);
+                bfsQ.remove(0);
+                if (chk[arr[look]]) continue;
+                chk[arr[look]] = true;
+                for (int i = 0; i < degree[arr[look]]; i++) {
+                    if (where[adjList[arr[look]][i]] > look && !chk[adjList[arr[look]][i]]) {
+                        bfsQ.add(adjList[arr[look]][i]);
+                        chk[adjList[arr[look]][i]] = true;
+                    }
+                }
+            }
+            rooted = true;
+            for(int i = 0; i < N; i++){
+                rooted = rooted && chk[i];
+            }
+            if(rooted) break;
+            for(look = 0; chk[look]; look++);
+            int maxReachableLoc = -1;
+            int maxLoc = -1;
+            for(int i = 0; i < degree[look]; i++){
+                if (maxReachableLoc < where[adjList[look][i]] && reachable[adjList[look][i]])
+                    maxReachableLoc = where[adjList[look][i]];
+                if(maxLoc < where[adjList[look][i]])
+                    maxLoc = where[adjList[look][i]];
+            }
+            if(maxReachableLoc == -1)
+                maxReachableLoc = maxLoc;
+            for(int i = where[look]; i <= maxReachableLoc; i++){
+                arr[i] = arr[i+1];
+                where[arr[i]] = i;
+            }
+            arr[maxReachableLoc] = look;
+            where[look] = maxReachableLoc;
+        }*/
 
         return arr;
     }
