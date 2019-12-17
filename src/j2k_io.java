@@ -148,6 +148,7 @@ public class j2k_io {
 
     public void write(int[] dag){
         int n = dag.length;
+        dag = makeValid(dag);
         for(int i = 0; i < n; i++){
             out.print(dag[i]);
             out.print(" ");
@@ -155,14 +156,28 @@ public class j2k_io {
         out.println();
     }
 
-    public boolean valid(int[] dag){
+    //dag가 유효하지 않으면 강제로 0~n으로 바꾼다.
+    public int[] makeValid(int[] dag){
         int n = dag.length;
         boolean[] chk = new boolean[n];
+        boolean valid = true;
         for(int i = 0; i < n; i++){
-            if (dag[i] < 0 || dag[i] >= n) return false;
-            else if (chk[dag[i]]) return false;
+            if (dag[i] < 0 || dag[i] >= n) {
+                valid = false;
+                break;
+            }
+            else if (chk[dag[i]]) {
+                valid = false;
+                break;
+            }
             chk[dag[i]] = true;
         }
-        return true;
+        if(!valid){
+            int[] rtn = new int[n];
+            for(int i = 0; i < n; i++)
+                rtn[i] = i;
+            return rtn;
+        }
+        return dag;
     }
 }
