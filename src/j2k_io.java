@@ -21,11 +21,23 @@ class j2k_main{
         j2k_graph[] qg = IO.readQuery();
 
         minDup md = new minDup();
+        longestPath lp = new longestPath();
 
         int[] dag;
 
+        IO.setOut("downorder.dag");
         for(int i = 0; i < n; i++){
             dag = md.downOrder(qg[i].degree);
+            IO.write(dag);
+        }
+        IO.setOut("greedyLog.dag");
+        for(int i = 0; i < n; i++){
+            dag = md.greedyLog(qg[i].adjList, qg[i].degree, qg[i].N);
+            IO.write(dag);
+        }
+        IO.setOut("longestPath.dag");
+        for(int i = 0; i < n; i++){
+            dag = lp.longPathDAG(qg[i].adjList, qg[i].degree, qg[i].N);
             IO.write(dag);
         }
     }
@@ -52,6 +64,14 @@ public class j2k_io {
                 out = System.out;
             }
         }else{
+            out = System.out;
+        }
+    }
+
+    public void setOut(String output){
+        try {
+            out = new PrintStream(new File(output));
+        } catch (FileNotFoundException e){
             out = System.out;
         }
     }
