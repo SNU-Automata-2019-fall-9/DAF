@@ -12,21 +12,27 @@ public class hw3{
 				System.out.println("Usage: ./program dataFile queryFile numQuery");
 				return;
 			}
+
 			String dataFileName = args[0];
 			String queryFileName = args[1];
 			int numQuery = Integer.parseInt(args[2]);
 
-
 			ProcessIO pio = new ProcessIO(dataFileName, queryFileName, numQuery);
+            Graph data = pio.readDate();
+            Graph[] queries = pio.readQuery();
 
-			//read input
-			Graph dataGraph = pio.readData();
-			Graph[] queryGraphs = pio.readQuery();
+            //for test
+//            System.out.println(data.numOfVertex);
+//            int k=0;
+//            for(Vertex v : queries[0].vertices){
+//                k+=v.degree;
+//            }
+//            System.out.println(k);
+            //
 
-			//get DAG
-
-            //print output
-			//pio.printAllDAGs(int[][]);
+          //print DAG string
+        //pio.printAllDAGs(int[][]);
+		
 	}
 
 }
@@ -60,10 +66,8 @@ class ProcessIO{
     }
 
     /*
-     *
      * read Data Graph from given file : 'dataFileName'
      * return Graph object
-     *
      *
      * Data graph format :
      *  t [graph id] [number of vertices]
@@ -73,7 +77,7 @@ class ProcessIO{
      * this method read only one date graph in this case.
      *
      */
-    Graph readData(){
+    Graph readDate(){
         Graph dataGraph = new Graph(1);//initialize for compile
 
         String line;
@@ -94,7 +98,7 @@ class ProcessIO{
             //first read
             //read number of vertices, number of labels and largest label
             //also make adjacent list
-            BufferedReader br1 = new BufferedReader(new FileReader(new File(queryFileName)));
+            BufferedReader br1 = new BufferedReader(new FileReader(new File(dataFileName)));
             line = br1.readLine();
 
             //for each query
@@ -144,7 +148,7 @@ class ProcessIO{
             //second read
             //set label(new name, original name, frequency) on each vertex in data graph
             //set renamed array in graph
-            BufferedReader br2 = new BufferedReader(new FileReader(new File(queryFileName)));
+            BufferedReader br2 = new BufferedReader(new FileReader(new File(dataFileName)));
             line = br2.readLine();
             lset = new HashSet<>();
 
@@ -161,18 +165,17 @@ class ProcessIO{
                     varray[vid] = labelValue;
 
                     if(!lset.contains(labelValue)){
-
                         lset.add(labelValue);
 
                         renameArray[labelRenameIndex] = labelValue;
 
+                        //get label info
                         Graph.labels[labelValue] = new Label(labelValue);
                         Graph.labels[labelValue].renamedLabel = labelRenameIndex;
                         Graph.labels[labelValue].frequency++;
 
                         labelRenameIndex++;
                     } else{
-                        Graph.labels[labelValue].renamedLabel = renameArray[labelValue];
                         Graph.labels[labelValue].frequency++;
                     }
 
@@ -184,10 +187,12 @@ class ProcessIO{
                 line = br2.readLine();
             }
 
+            //set vertex contains its label
             for(int i=0;i<varray.length;i++){
                 dataGraph.vertices[i].label = Graph.labels[varray[i]];
             }
 
+            //array for searching original name with old name
             dataGraph.renamedLabels = renameArray;
             return dataGraph;
 
@@ -197,10 +202,8 @@ class ProcessIO{
         }
     }
     /*
-     *
      * read query graphs from given file : 'queryFileName'
      * return array of Graph object
-     *
      *
      * data format for query graph :
      * - 100 graph instances
@@ -280,8 +283,12 @@ class ProcessIO{
     }
 
 }
+
+
 /*
  * class for building Directed Acyclic Graph(DAG)
+ *
+ *
  *
  */
 class DAG{
