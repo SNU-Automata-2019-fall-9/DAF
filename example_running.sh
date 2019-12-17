@@ -15,4 +15,4 @@ echo 'done'
 
 #compare two results
 echo '*comparing result*'
-python sort_result.py result_dag result_daf
+python3 sort_result.py result_dag result_daf
