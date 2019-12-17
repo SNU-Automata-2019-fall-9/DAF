@@ -1,19 +1,24 @@
 # 오토마타 9조
 
 ## 실행환경
-윈도우 intellij, 리눅스 우분투 환경에서 테스트 했습니다.
+리눅스 우분투 환경에서 테스트 했습니다.
 
 ## 실행방법
-src 폴더 아래의 자바 클래스들을 모두 컴파일해서 hw3.java를 실행하면 dag파일을 출력합니다.
 
-DAF 폴더에서
+cd DAF
+를 통해 DAF 폴더로 들어간 후,
+DAF 폴더에서 spec에 쓰여진 대로 동일하게
 
 (컴파일)
-javac -d ./class -sourcepath ./src ./src/hw3.java
+
+g++ -std=c++11 -o hw3 hw3.cpp
 
 (실행)
-java -cp class hw3 args[]
-(java -cp class hw3 yeast yeast_400n 100 > yeast_400.dag)
+
+ ./hw3 yeast yeast_400n 100 > yeast_400.dag
+ 
+ 명령어를 써주면 yeast_400.dag에 만들어진 DAG 파일이 출력됩니다.
+
 
 
 
