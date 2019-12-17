@@ -24,12 +24,11 @@ public class hw3{
         int[] dag;
         for(int i = 0; i < numQuery; i++){
             dag = md.greedyLog(qg[i].adjList, qg[i].degree, qg[i].N);
-            if(IO.valid(dag))
-                IO.write(dag);
-            else{
+            if(!IO.valid(dag)){
                 for(int j = 0; j < dag.length; j++)
                     dag[j] = j;
             }
+            IO.write(dag);
         }
 
         /*
